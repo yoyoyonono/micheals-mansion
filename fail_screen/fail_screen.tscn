@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://mtwl05xvpndq"]
 
-[ext_resource type="Script" path="res://fail_screen/fail_screen.gd" id="1_es862"]
+[ext_resource type="Script" uid="uid://w68f6fygy0oy" path="res://fail_screen/fail_screen.gd" id="1_es862"]
 [ext_resource type="Texture2D" uid="uid://cuxwmluab7al0" path="res://fail_screen/MichealsMansionLoss.webp" id="1_f4jr2"]
 [ext_resource type="FontFile" uid="uid://l73yc6ee676i" path="res://SeymourOne-Regular.ttf" id="2_et7q8"]
 [ext_resource type="Texture2D" uid="uid://brarw7u4dnrbt" path="res://buttons/Play.webp" id="4_ikoxu"]
@@ -38,8 +38,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_aai15"]
 _data = {
-"RESET": SubResource("Animation_j5ipt"),
-"ShowPlay": SubResource("Animation_ny10k")
+&"RESET": SubResource("Animation_j5ipt"),
+&"ShowPlay": SubResource("Animation_ny10k")
 }
 
 [node name="FailScreen" type="Control"]
@@ -105,7 +105,7 @@ texture_normal = ExtResource("4_ikoxu")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PlayButton"]
 libraries = {
-"": SubResource("AnimationLibrary_aai15")
+&"": SubResource("AnimationLibrary_aai15")
 }
 autoplay = "ShowPlay"
 

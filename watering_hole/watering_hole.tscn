@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://iakv04hemxrr"]
 
 [ext_resource type="Texture2D" uid="uid://dlk2e0864o4wq" path="res://watering_hole/watering_hole.webp" id="1_0rr34"]
-[ext_resource type="Script" path="res://watering_hole/watering_hole.gd" id="1_i2kko"]
+[ext_resource type="Script" uid="uid://dmk78u4gxbcpa" path="res://watering_hole/watering_hole.gd" id="1_i2kko"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q1w51"]
 size = Vector2(753, 325)

@@ -37,6 +37,7 @@ func spawn_waters() -> void:
 		water.global_position = water_spawn_position.global_position + \
 			(Vector2.RIGHT.rotated(randf() * 2 * PI) * 30)
 		
+		if get_tree() == null: return
 		get_tree().current_scene.add_child(water)
 		await get_tree().create_timer(.05).timeout
 

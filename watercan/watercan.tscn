@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://w8v26m5aemb3"]
 
-[ext_resource type="Script" path="res://watercan/watercan.gd" id="1_p7hrf"]
+[ext_resource type="Script" uid="uid://r4bm0mknm2rj" path="res://watercan/watercan.gd" id="1_p7hrf"]
 [ext_resource type="PackedScene" uid="uid://mqfmpypccn4t" path="res://tool/tool.tscn" id="1_ss0h0"]
 [ext_resource type="PackedScene" uid="uid://bb12rb2k53b11" path="res://water_drop/water_drop.tscn" id="2_napvh"]
 [ext_resource type="Texture2D" uid="uid://dcinjfte7gowy" path="res://watercan/watercan.webp" id="2_tiu6w"]
@@ -55,8 +55,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g6ty5"]
 _data = {
-"RESET": SubResource("Animation_tyn82"),
-"pouring": SubResource("Animation_1cgvm")
+&"RESET": SubResource("Animation_tyn82"),
+&"pouring": SubResource("Animation_1cgvm")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8i6j"]
@@ -117,9 +117,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hesx2"]
 _data = {
-"Drained": SubResource("Animation_k4jit"),
-"RESET": SubResource("Animation_xvdm4"),
-"Refilled": SubResource("Animation_vmb0c")
+&"Drained": SubResource("Animation_k4jit"),
+&"RESET": SubResource("Animation_xvdm4"),
+&"Refilled": SubResource("Animation_vmb0c")
 }
 
 [node name="Watercan" type="Area2D"]
@@ -145,7 +145,7 @@ shape = SubResource("RectangleShape2D_s04fw")
 [node name="TiltAnimation" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true
 libraries = {
-"": SubResource("AnimationLibrary_g6ty5")
+&"": SubResource("AnimationLibrary_g6ty5")
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -168,7 +168,7 @@ value = 50.0
 [node name="ModulateAnimation" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true
 libraries = {
-"": SubResource("AnimationLibrary_hesx2")
+&"": SubResource("AnimationLibrary_hesx2")
 }
 
 [connection signal="used" from="Tool" to="." method="_on_tool_used"]

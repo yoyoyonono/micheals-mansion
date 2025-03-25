@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://c10irijaqjvdr"]
 
-[ext_resource type="Script" path="res://plant/plant.gd" id="1_ogsqu"]
+[ext_resource type="Script" uid="uid://hd2afquhtfsb" path="res://plant/plant.gd" id="1_ogsqu"]
 [ext_resource type="Texture2D" uid="uid://cj4swsy2gtqic" path="res://potted-plant.svg" id="1_qcl47"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3lvna"]

@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://6dhpnejtjxh5"]
 
 [ext_resource type="Texture2D" uid="uid://ckxcnsodo7n2h" path="res://swatta/Swatta.webp" id="1_chh48"]
-[ext_resource type="Script" path="res://swatta/swatta.gd" id="1_j1ryj"]
-[ext_resource type="Script" path="res://swatta/insect_killer.gd" id="2_mjyot"]
+[ext_resource type="Script" uid="uid://b00ui7c25s4qa" path="res://swatta/swatta.gd" id="1_j1ryj"]
+[ext_resource type="Script" uid="uid://ddq6xjxuys08" path="res://swatta/insect_killer.gd" id="2_mjyot"]
 [ext_resource type="PackedScene" uid="uid://mqfmpypccn4t" path="res://tool/tool.tscn" id="3_4d1sl"]
 [ext_resource type="Texture2D" uid="uid://6h0pc3oh10af" path="res://swatta/Swatta-Shadow.webp" id="3_lg2si"]
 [ext_resource type="AudioStream" uid="uid://myg2d0c1o22s" path="res://swatta/swat.ogg" id="5_pu1k1"]
@@ -78,8 +78,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_cy7j2"]
 _data = {
-"RESET": SubResource("Animation_nmqr4"),
-"swatting": SubResource("Animation_lyl3l")
+&"RESET": SubResource("Animation_nmqr4"),
+&"swatting": SubResource("Animation_lyl3l")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oxmn6"]
@@ -91,7 +91,6 @@ size = Vector2(226, 438)
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_lotg8"]
 streams_count = 1
 stream_0/stream = ExtResource("5_pu1k1")
-stream_0/weight = 1.0
 
 [node name="Swatta" type="Node2D"]
 script = ExtResource("1_j1ryj")
