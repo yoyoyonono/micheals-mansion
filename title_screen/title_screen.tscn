@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://f7qamlnquf4d"]
+[gd_scene format=3 uid="uid://f7qamlnquf4d"]
 
 [ext_resource type="Texture2D" uid="uid://cvcy23pxk2uti" path="res://title_screen/mmts.webp" id="1_2m2gd"]
 [ext_resource type="Script" uid="uid://bheusfh27q0v1" path="res://title_screen/title_screen.gd" id="1_oqrgu"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://brarw7u4dnrbt" path="res://buttons/Play.webp" id="4_ai64g"]
 [ext_resource type="Script" uid="uid://b0jr4qu75hyyd" path="res://title_screen/donor_drive_label.gd" id="6_fk0fn"]
 
-[node name="TitleScreen" type="Control"]
+[node name="TitleScreen" type="Control" unique_id=473649156]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,7 +18,7 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_oqrgu")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1574126205]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -30,40 +30,40 @@ expand_mode = 1
 stretch_mode = 3
 metadata/_edit_lock_ = true
 
-[node name="MichaelsMansionLogo" type="Sprite2D" parent="."]
+[node name="MichaelsMansionLogo" type="Sprite2D" parent="." unique_id=933339477]
 visible = false
 position = Vector2(1207, 665)
 scale = Vector2(0.26506, 0.26506)
 texture = ExtResource("2_1jaa1")
 metadata/_edit_lock_ = true
 
-[node name="Quit" type="Sprite2D" parent="."]
+[node name="Quit" type="Sprite2D" parent="." unique_id=89214180]
 position = Vector2(1041, 509)
 scale = Vector2(0.449037, 0.449037)
 texture = ExtResource("3_psct1")
 
-[node name="Control" type="Control" parent="Quit"]
+[node name="Control" type="Control" parent="Quit" unique_id=623604069]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 theme = ExtResource("4_0m3ch")
 
-[node name="QuitButton" type="Button" parent="Quit/Control"]
+[node name="QuitButton" type="Button" parent="Quit/Control" unique_id=723336855]
 layout_mode = 0
 offset_left = -474.0
 offset_top = 223.0
 offset_right = 472.0
 offset_bottom = 357.0
 
-[node name="QuitButton2" type="Button" parent="Quit/Control"]
+[node name="QuitButton2" type="Button" parent="Quit/Control" unique_id=1789540549]
 layout_mode = 0
 offset_left = 247.0
 offset_top = -339.0
 offset_right = 472.0
 offset_bottom = 357.0
 
-[node name="PlayButton" type="TextureButton" parent="."]
+[node name="PlayButton" type="TextureButton" parent="." unique_id=413131667]
 layout_mode = 0
 offset_left = 37.0
 offset_top = 379.0
@@ -75,7 +75,7 @@ texture_hover = ExtResource("4_ai64g")
 texture_disabled = ExtResource("4_ai64g")
 texture_focused = ExtResource("4_ai64g")
 
-[node name="DonorDriveLabel" type="Label" parent="."]
+[node name="DonorDriveLabel" type="Label" parent="." unique_id=1081507432]
 layout_mode = 0
 offset_left = 7.0
 offset_top = 664.0
